@@ -4,15 +4,14 @@ import { Link} from "react-router-dom";
 export default function Menu(){
 
     return(
-        <div>
-            <h1>Volunteer</h1>
-            <ul>
-                <Link>Inicio</Link>
+        <div className="flex justify-around items-center pt-3">
+            <h1 className="font-bold">Volunteer</h1>
+            <ul className="flex justify-around w-96">
+                <Link >Inicio</Link>
                 <Link>convocatoria</Link>
                 <Link>Voluntariado</Link>
-                <Link> Voluntaridos</Link>
             </ul>
-            <button><Link>Login</Link></button>
+            <button className="bg-white border border-gray-300 text-black font-bold py-0 px-4 rounded pt-0"><Link>Login</Link></button>
         </div>
     );
 
