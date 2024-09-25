@@ -199,6 +199,8 @@
     border-radius: 8px; /* esquinas redondeadas */
     padding: 10px 80px; /* espacio entre el borde y el texto */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+    margin-bottom: 4px;
+    margin-left: 4px;
 }
 
 .input-fiel {
@@ -213,4 +215,70 @@
     padding: 12px 60px;
     background-color: blue;
     color: white;
+}
+
+.convocatoria{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.convocatoria h1{
+font-weight: bold;
+font-size: x-large;
+margin-top: 20px;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner div{
+    background-color: rgb(241, 221, 167);
+    width: 30%;
+    height: 10%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 36vw;
+}
+
+
+.banner div img{
+    height: 180px;
+    border-radius: 20px;
+}
+
+.banner div h3{
+    text-align: center;
+    font-weight: 800;
+    margin:  6px 0px;
+}
+.banner div textarea{
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+.banner div article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner div article .buttonuno{
+   width: 30px;
+   display: flex;
+   justify-content: space-between;
+
+
 }
