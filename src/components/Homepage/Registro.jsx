@@ -1,7 +1,10 @@
 import React from "react";
 import img1 from "../img/registro.jpg"
-import { useState } from "react";
-//import { useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addUser } from "../redux/userSlice";
+ 
+
 
 export default function Registro(){
 
@@ -9,6 +12,16 @@ export default function Registro(){
     const [email, setEmail] = useState("");
     const [contraseña, setContraseña] = useState("");
     const [rol, setRol] = useState("");
+    
+
+    const dispatch = useDispatch();
+
+
+    const user = useSelector(state => state.usuario)
+
+
+    
+    console.log("estado: ", user);
     
 
 
@@ -33,6 +46,7 @@ export default function Registro(){
         
     }
 
+    const id = 1;
 
     return(
         <div className="login">
@@ -41,26 +55,47 @@ export default function Registro(){
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
-            <article login-conta for>
-                <form onSubmit={""}>
+            <article className="login-conta for">
+                <form onSubmit={(e)=>{e.preventDefault()}}>
                     
                     <br /><br /><br />
 
                     <label htmlFor="">
-                        <input className="input-field" type="text" name="name" id="" placeholder="Nombre" />
+                        <input 
+                        className="input-field" 
+                        type="text" 
+                        name="name" 
+                        id="" 
+                        placeholder="Nombre"
+                        onChange={(e) => {setNombre(e.target.value)}}
+                        />
                     </label>
 
 
                     <br />
                     <label htmlFor="">
-                        <input className="input-field" type="text" name="" id="" placeholder="Email" />
+                        <input 
+                        className="input-field" 
+                        type="text" 
+                        name="" 
+                        id="" 
+                        placeholder="Email" 
+                        onChange={(e) => {setEmail(e.target.value)}}
+                        />
                     </label>
                     <label htmlFor="">
-                        <input className="input-field" type="password" name="" id="" placeholder="contraseña" />
+                        <input 
+                        className="input-field" 
+                        type="password" 
+                        name="" 
+                        id="" 
+                        placeholder="contraseña" 
+                        onChange={(e) => {setContraseña(e.target.value)}}
+                        />
                     </label>
                     <br />
                     <label htmlFor="">
-                    <select className="input-fiel" id="documento" name="documento">
+                    <select className="input-fiel" id="documento" name="documento" onChange={(e) => {setRol(e.target.value)}}>
                         <option value="">seleccion tipo persona</option>
                         <option value="voluntario">voluntario</option>
                         <option value="empresa">Empresa</option>
@@ -74,7 +109,10 @@ export default function Registro(){
                     
                     <div >
                         <input className="input-field envia hover:cursor-pointer" type="submit" 
-                        value="Registrar" onClick={handleSubmitEvent}/>
+                        value="Registrar" onClick={()=> {
+                            dispatch(addUser(nombre, email, contraseña, rol))
+                                
+                            }}/>
                     </div>
 
                 </form>
