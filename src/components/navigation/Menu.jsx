@@ -6,7 +6,7 @@ export default function Menu(){
         <div className="flex justify-around items-center pt-3">
             <h1 className="font-bold">Volunteer</h1>
             <ul className="flex justify-around w-96">
-                <Link to={"/inicio"}>Inicio</Link>
+                <Link to={"/Home"}>Inicio</Link>
                 <Link to={"/Convocatoria"}>convocatoria</Link>
                 <Link to={"/Voluntario"}>Voluntariado</Link>
             </ul>

@@ -19,25 +19,25 @@ export default function voluntariado(){
                 <div>
                     <img src={img1} alt="" />
                     <p>Ayuda Humanitaria y Alivio en Casos de Desastre</p>
-                    <button><Link>See More ›</Link></button>
+                    <Link className="button">Ver mas..</Link>
                 </div>
 
                 <div>
                     <img src={img2}  alt="" />
                     <p> Desarrollo Comunitario</p>
-                    <button><Link>See More ›</Link></button>
+                    <Link className="button">Ver mas..</Link>
                 </div>
 
                 <div>
                     <img src={img3} alt="" />
                     <p>Bienestar Animal</p>
-                    <button><Link>See More ›</Link></button>
+                    <Link className="button">Ver mas..</Link>
                 </div>
 
                 <div>
                     <img src={img4} alt="" />
                     <p>Conservación Ambiental</p>
-                    <button><Link>See More ›</Link></button>
+                    <Link className="button">Ver mas..</Link>
                 </div>
             </section>
         </div>
