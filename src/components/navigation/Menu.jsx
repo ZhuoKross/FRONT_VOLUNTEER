@@ -7,7 +7,7 @@ export default function Menu(){
         <div>
             <h1>Volunteer</h1>
             <ul>
-                <Link>Inicio</Link>
+                <Link className="">Inicio</Link>
                 <Link>convocatoria</Link>
                 <Link>Voluntariado</Link>
                 <Link> Voluntaridos</Link>
