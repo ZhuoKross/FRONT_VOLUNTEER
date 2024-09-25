@@ -50,4 +50,90 @@
 .header_img img{
     width: 290px;
     text-align: center;
+    border-radius: 20px;
+}
+
+.frase{
+        background-image: url('./../components/img/fondo.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.frase p, h5{
+    font-weight: bold;
+}
+
+.frase h5{
+    margin-top: 10px;
+}
+
+.frase .punto{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.conta{
+    background-color: rgb(238, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.conta h3{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.conta p{
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 620;
+    margin: 30px;
+}
+
+.conta img{
+    height: 240px;
+}
+
+.conta .caras{
+    display: flex;
+    margin-top: 10px;
+}
+
+.conta .caras div{
+    display: flex;
+    margin-top: 50px;
+    background-color: white;
+     margin-left: 40px;
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conta .caras div p{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
 }

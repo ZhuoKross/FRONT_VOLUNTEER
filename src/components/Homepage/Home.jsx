@@ -2,6 +2,8 @@ import React from "react";
 import Menu from "../navigation/Menu";
 import Header from "./Header";
 import { Outlet } from "react-router";
+import Frase from "./frase";
+import Voluntariado from "./voluntariado";
 
 
 export default function Home(){
@@ -11,6 +13,9 @@ export default function Home(){
             
             <Menu />
             <Header/>
+            <Frase/>
+            <Voluntariado/>
+            
 
             <Outlet />
         </div>

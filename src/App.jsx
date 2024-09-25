@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Homepage/Home'
 import VolunteerPage from './components/Volunteer/VolunteerPage'
+import Voluntario from './components/Homepage/Voluntario'
 
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}>
-            <Route path='Volunteering' element={<VolunteerPage />} />
+            <Route path='Inicio' element={<Home />} />
+            <Route path='Convocatoria' element={<Voluntario />} />
+            <Route path='Voluntario' element={<Voluntario  />} />
+            <Route path='Login' element={<VolunteerPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
