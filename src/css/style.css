@@ -247,6 +247,7 @@ margin-bottom: 20px;
     justify-content: center;
     padding: 10px;
     width: 36vw;
+    margin: 10px;
 }
 
 
@@ -278,7 +279,82 @@ margin-bottom: 20px;
 .banner div article .buttonuno{
    width: 30px;
    display: flex;
+
    justify-content: space-between;
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ver{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    margin-top: 10px;
+}
+
+.ver section{
+    display: flex;
+}
+
+.ver h1{
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.ver section img{
+    width: 30vw;
+    height: 480px;
+    border-radius: 20px;
+    margin: -20px 20px 12px 20px;
+}
+
+.ver section div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ver section p{
+    width: 55vw;
+    text-align:left;
+}
+
+.dos{
+    display: flex;
+    flex-direction: column;
+}
+
+.dos div button{
+    border: 1px solid #4ca2d4; /* borde gris claro */
+    border-radius: 8px; /* esquinas redondeadas */
+    padding: 10px 80px; /* espacio entre el borde y el texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+    margin-bottom: 4px;
+    margin-left: 4px;
+    color: white;
+    background-color: rgb(30, 30, 153);
+    margin-top: 20px;
 }
