@@ -5,21 +5,24 @@ export default function Registro(){
 
     return(
         <div className="login">
-          <h1 className="login-h1"> Sumate al cambio ambiental</h1>
+          <h1 className="login-h1"> Registro Convocatoria</h1>
            <section>
+
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
+
             <article login-conta for>
                 <form action="" method="post">
 
                     
                     <label htmlFor="">
-                        <input className="input-field" type="text" name="documento" id="" placeholder="Documento" />
+                        <input className="input-field" type="text" name="titulo" id="" placeholder="titulo" />
                     </label>
                     <br />
+
                     <label htmlFor="">
-                    <select className="input-fiel" id="documento" name="documento">
+                    <select className="input-fiel" id="categoria" name="categoria">
                         <option value="">Seleccione una opción</option>
                         <option value="cedula">Cédula de ciudadanía</option>
                         <option value="tarjeta_identidad">Tarjeta de identidad</option>

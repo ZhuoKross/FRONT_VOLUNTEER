@@ -10,6 +10,7 @@ export default function Menu(){
                 <Link to={"/Home"}>Inicio</Link>
                 <Link to={"/Convocatoria"}>convocatoria</Link>
                 <Link to={"/Voluntario"}>Voluntariado</Link>
+                <Link to={"/CrearConvo"}>crear convocatoria</Link>
             </ul>
             <button className="bg-white border border-gray-300 text-black font-bold py-0 px-4 rounded pt-0"><Link to={"/Login"}>Login</Link></button>
         </div>
