@@ -1,16 +1,11 @@
 import React from "react";
 import { Link} from "react-router-dom";
+import img from "../img/img-1.jpg";
 
 export default function Menu(){
 
     return(
-        <div>
-            <section>
-                <h2>VOLUNTEER</h2>
-                <p>"Voluntarios por la tierra: Juntos podemos hacer la diferencia"</p>
-                <button><Link>voluntariados</Link></button>
-            </section>
-
+    
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,7 +35,7 @@ export default function Menu(){
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
+
     );
 
 }
