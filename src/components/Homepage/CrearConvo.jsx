@@ -13,7 +13,7 @@ export default function CrearConvo(){
             <article login-conta for>
                 <form action="" method="post">
                     <label htmlFor="">
-                        <input className="input-field" type="text" name="name" id="" placeholder="Nombre evento" />
+                        <input className="input-field" type="text" name="name" id="" placeholder="Nombre del evento" />
                     </label>
                     <br />
             
@@ -21,13 +21,13 @@ export default function CrearConvo(){
                         <input className="input-field" type="text" name="" id="" placeholder="Contenido" />
                     </label>
                     <label htmlFor="">
-                        <input className="input-field" type="date" id=""  />
+                        <input className="input-field" type="date" id=""/>
                     </label>
                     <br />
                     <label htmlFor="">
                     <select className="input-fiel" id="documento" name="documento" style={{marginLeft:'5px'}}>
                         <option value="">SOS</option>
-                        <option value="cedula">volumtario</option>
+                        <option value="cedula">Voluntario</option>
                     </select>
                     </label>
                     

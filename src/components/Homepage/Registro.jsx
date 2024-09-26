@@ -26,8 +26,8 @@ export default function Registro(){
                     <br />
                     <label htmlFor="">
                     <select className="input-fiel" id="documento" name="documento" style={{marginLeft:'5px'}}>
-                        <option value="">seleccion tipo persona</option>
-                        <option value="cedula">volumtario</option>
+                        <option value="">Seleccion tipo persona</option>
+                        <option value="cedula">Voluntario</option>
                         <option value="tarjeta_identidad">Empresa</option>
                         <option value="pasaporte">ONU</option>
                         <option value="nit">NIT</option>

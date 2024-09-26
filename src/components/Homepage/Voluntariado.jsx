@@ -13,7 +13,7 @@ export default function Voluntariado(){
         <div className="conta">
             <h3>Voluntariado</h3>
             <p>Un pequeño gesto puede cambiarlo todo. Al voluntariar, no solo mejoras la vida de otros, sino también la tuya.
-            Únete a una causa que te apasione y sé parte de un movimiento que genera un impacto positivo</p>
+            Únete a una causa que te apasione y sé parte de un movimiento que genera un impacto positivo.</p>
 
             <section style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
 
