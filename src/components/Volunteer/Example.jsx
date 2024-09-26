@@ -4,7 +4,9 @@ import { useSelector } from "react-redux";
 
 export default function Example(){
 
-    const user = useSelector(state => state.usuario)
+    const user = useSelector((state) => {return state.user})
+
+    console.log(user);
 
     return(
         <div>

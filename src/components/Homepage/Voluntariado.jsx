@@ -5,13 +5,13 @@ import img2 from "../img/ DesarrolloComunitario.jpg"
 import img3 from "../img/BienestarAnimal.jpg"
 import img4 from "../img/ConservaciónAmbiental.jpg"
 
-
 export default function Voluntariado(){
 
 
     return(
         <div className="conta">
             <h3>Voluntariado</h3>
+            
             <p>Un pequeño gesto puede cambiarlo todo. Al voluntariar, no solo mejoras la vida de otros, sino también la tuya.
             Únete a una causa que te apasione y sé parte de un movimiento que genera un impacto positivo</p>
 

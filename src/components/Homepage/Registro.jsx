@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../img/registro.jpg"
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addUser } from "../redux/userSlice";
@@ -13,41 +12,38 @@ export default function Registro(){
     const [email, setEmail] = useState("");
     const [contraseña, setContraseña] = useState("");
     const [rol, setRol] = useState("");
-    
+    const id = "JILJOIJHGO9077";
+    const idRol = "LJLJOIF234"; 
+    const idPais = "OIJOIJF098u0923"   
 
     const dispatch = useDispatch();
 
 
-    const user = useSelector(state => state.usuario)
+    const user = useSelector(state => state.user)
 
 
-    
-    console.log("estado: ", user);
-    
-
-
-    const handleSubmitEvent = (e) =>{
-        e.preventDefault();
-
-        const formRegistro = e.target.parentNode.parentNode;
+    // useEffect(()=>{
         
-        const nombre = formRegistro.children[3].children[0].value;
-        const email = formRegistro.children[5].children[0].value;
-        const contraseña = formRegistro.children[6].children[0].value;
-        const rol = formRegistro.children[8].children[0].value;
+    // }, [])
+    
+    
+    // const handleFetchSubmit = async () =>{
+    //     await fetch("http://localhost:8081/users/create", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify({
+    //             idUsuario: id,
+    //             nombre,
+    //             email,
+    //             contraseña,
+    //             idRol,
+    //             idPais
+    //         })
+    //     })
+    // }
 
-
-        // console.log(nombre);
-        // console.log(email);
-        // console.log(contraseña);
-        // console.log(rol);
-
-
-
-        
-    }
-
-    const id = 1;
 
     return(
         <div className="login">
@@ -58,8 +54,8 @@ export default function Registro(){
             </article>
 
 
-            <article login-conta for>
-                <form action="" method="post">
+            <article className="login-conta for">
+                <form >
                     <label htmlFor="">
                         <input 
                         className="input-field" 
@@ -108,9 +104,18 @@ export default function Registro(){
                     
                     <div >
                         <input className="input-field envia hover:cursor-pointer" type="submit" 
-                        value="Registrar" onClick={()=> {
-                            dispatch(addUser(nombre, email, contraseña, rol))
-                                
+                        value="Registrar" onClick={(e)=> { 
+                            
+                            e.preventDefault();
+                            
+                            console.log(nombre);
+                            console.log(email);
+                            console.log(contraseña);
+                            console.log(rol);
+
+                            dispatch(addUser({nombre, email, contraseña, rol}))
+                            
+                            handleFetchSubmit();
                             }}/>
                     </div>
 
