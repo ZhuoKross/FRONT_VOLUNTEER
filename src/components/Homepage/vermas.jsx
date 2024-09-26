@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import img1 from "../img/registro.jpg"
+import img1 from "../img/login.png"
 
 export default function Menu(){
 
@@ -33,9 +33,7 @@ export default function Menu(){
 
                         Por favor, no dude en ofrecer su ayuda en este momento crítico. Juntos, podemos hacer una diferencia y restaurar la zona verde a su estado natural.
                         </p>
-                        <div>
-                        <button>Volver</button>
-                        </div>
+                        <Link className="mas envia" to={"/Convocatoria"}>Volver</Link>
                 </section>
                    
             </section>

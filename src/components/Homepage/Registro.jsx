@@ -90,12 +90,13 @@ export default function Registro(){
                     </label>
                     <br />
                     <label htmlFor="">
+
                     <select className="input-fiel" id="documento" name="documento" onChange={(e) => {setRol(e.target.value)}}>
                         <option value="">seleccion tipo persona</option>
                         <option value="voluntario">voluntario</option>
                         <option value="empresa">Empresa</option>
                         <option value="onu">ONU</option>
-                        <option value="nit">NIT</option>
+
                     </select>
                     </label>
                     
