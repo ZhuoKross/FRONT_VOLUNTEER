@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../img/login.jpg"
+import img1 from "../img/login.png"
 import {Link} from "react-router-dom";
 
 export default function Login(){

@@ -6,6 +6,9 @@ import { addUser } from "../redux/userSlice";
  
 
 
+import img1 from "../img/login.png"
+
+
 export default function Registro(){
 
     const [nombre, setNombre] = useState("");
@@ -51,14 +54,14 @@ export default function Registro(){
     return(
         <div className="login">
           <h1 className="login-h1"> Sumate al cambio ambiental</h1>
-           <section>
+           <section className="espacio">
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
-            <article className="login-conta for">
-                <form onSubmit={(e)=>{e.preventDefault()}}>
-                    
-                    <br /><br /><br />
+
+
+            <article login-conta for>
+                <form action="" method="post">
 
                     <label htmlFor="">
                         <input 
@@ -73,6 +76,7 @@ export default function Registro(){
 
 
                     <br />
+            
                     <label htmlFor="">
                         <input 
                         className="input-field" 
@@ -117,9 +121,9 @@ export default function Registro(){
 
                 </form>
             </article>
-           
            </section>
         </div>
+    
     );
 
 }

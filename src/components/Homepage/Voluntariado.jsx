@@ -6,7 +6,7 @@ import img3 from "../img/BienestarAnimal.jpg"
 import img4 from "../img/ConservaciónAmbiental.jpg"
 
 
-export default function voluntariado(){
+export default function Voluntariado(){
 
 
     return(
@@ -24,7 +24,7 @@ export default function voluntariado(){
 
                 <div>
                     <img src={img2}  alt="" />
-                    <p> Desarrollo Comunitario</p>
+                    <p>Desarrollo Comunitario</p>
                     <Link className="button">Ver mas..</Link>
                 </div>
 
