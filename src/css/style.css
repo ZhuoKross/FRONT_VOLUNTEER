@@ -1,11 +1,24 @@
 .header{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(238, 235, 235);
+    background-color: #f7f7f7;
     height: 80vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 10px;
+}
+
+.ul{
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ul .li:hover{
+    border-radius: 30px;
+    padding: 0px 15px;
+    background-color: #eeeded;
 }
 
 
@@ -188,10 +201,15 @@
 }
 
 .login .login-conta img{
-    width: 280px;
-    height: 400px;
+    width: 380px;
+    height: 500px;
     border-radius: 30px;
     margin-right: 140px;
+    margin-top: -60px;
+}
+
+.espacio{
+    margin-left: 270px;
 }
 
 .input-field {
@@ -213,7 +231,7 @@
 
 .envia{
     padding: 12px 60px;
-    background-color: blue;
+    background-color: rgba(99, 175, 54, 0.76);
     color: white;
 }
 
@@ -357,4 +375,17 @@ margin-bottom: 20px;
     color: white;
     background-color: rgb(30, 30, 153);
     margin-top: 20px;
+}
+
+
+
+
+.pagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 20px 0px;
 }
