@@ -9,7 +9,7 @@ export default function Menu(){
             <section className="header_info">
                 <h2>VOLUNTEER</h2>
                 <p>"Voluntarios por la tierra: Juntos podemos hacer la diferencia"</p>
-                <button><Link>voluntariados</Link></button>
+                <button><Link>Convocatoria</Link></button>
             </section>
 
 
