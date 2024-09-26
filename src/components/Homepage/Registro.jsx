@@ -1,14 +1,11 @@
 import React from "react";
-<<<<<<< HEAD
 import img1 from "../img/registro.jpg"
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addUser } from "../redux/userSlice";
- 
-
-=======
 import img1 from "../img/login.png"
->>>>>>> baa62a9335d64c6db9005a453553fa9000057ff3
+
+
 
 export default function Registro(){
 
@@ -55,10 +52,11 @@ export default function Registro(){
     return(
         <div className="login">
           <h1 className="login-h1"> Sumate al cambio ambiental</h1>
-           <section className="espacio">
+           <section className="espacio"> 
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
+
 
             <article login-conta for>
                 <form action="" method="post">
@@ -118,9 +116,9 @@ export default function Registro(){
 
                 </form>
             </article>
-           
            </section>
         </div>
+    
     );
 
 }
