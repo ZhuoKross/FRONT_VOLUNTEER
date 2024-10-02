@@ -30,7 +30,7 @@ const userSlice = createSlice({
             console.log("email(slice):", state.email)
             console.log("contraseña(slice):", state.contraseña)
             console.log("idRol(slice):", state.idRol)
-            // console.log("Estado del user: ",state);
+            
         }
     }
 })

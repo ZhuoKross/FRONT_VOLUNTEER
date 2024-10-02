@@ -5,10 +5,30 @@ import img1 from "../img/login.png"
 export default function Menu(){
 
     return(
-        <div className="ver">
-            <h1>Los Chorros SOS</h1>
+        <div className="flex flex-col">
             <section>
-                <img src={img1} alt="" />
+            <div className="bg-zinc-300 flex flex-row place-content-center items-center w-full">
+                <div className="w-full flex m-10 container-main-information">
+                    <img src={img1} alt="" className="img-convocatoria me-10"/>
+                    <div className="max-w-xl">
+                        <p className=" text-zinc-500">Llanos Orientales, Colombia</p>
+                        <h1 className="text-5xl font-bold inline-block">Los Chorros SOS</h1>
+                        <div className="mt-2 mb-3">
+                            <span className="bg-blue-500 inline-block p-1 pe-3 pl-3 rounded-3xl  text-center text-slate-100 me-2">Granja</span>
+                            <span className="bg-blue-500 inline-block p-1 pe-3 pl-3 rounded-3xl  text-center text-slate-100 me-2">Mantenimiento</span>
+                        </div>
+                        <p className="mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea in dignissimos aliquam! Id sint unde omnis rem facilis! Odit placeat, harum facilis voluptate atque nostrum voluptatibus commodi aliquid iure perspiciatis iusto! Sunt cumque inventore fugit neque fugiat, repellat veniam hic aliquam. Modi dolores aperiam a dolor temporibus delectus, iure eligendi, aliquam quos cum aliquid vero. Doloremque, quasi ex ipsa eaque non nobis temporibus officia neque totam ut placeat? Pariatur deserunt voluptas delectus. Neque, at. Repellat hic quisquam distinctio odit totam in sit vel asperiores possimus. 
+                        </p>
+                        <div className="flex ">
+                            <p className="self-center w-2/3 underline">Numero de cupos: 25</p>
+                            <div className="flex w-1/3">
+                                <button className="p-4 bg-lime-500 rounded-3xl w-40 text-slate-200 hover:text-white">Aplicar Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <section className="dos">
                     <p>
                         <br /><br />

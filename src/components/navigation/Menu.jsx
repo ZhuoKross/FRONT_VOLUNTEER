@@ -24,7 +24,7 @@ export default function Menu(){
 
     return(
 
-        <div className="flex justify-around items-center pt-3">
+        <div className="flex justify-around items-center pt-3 pb-3">
             <h1 className="font-bold">Volunteer</h1>
             <ul className="flex justify-around w-96 ul">
                 <Link className="li" to={"/Home"}>Inicio</Link>

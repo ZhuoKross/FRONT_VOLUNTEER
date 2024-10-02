@@ -165,14 +165,6 @@
 }
 
 
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(219, 219, 219);
-    margin-top: 15px;
-}
 
 
 .login-h1{
@@ -183,41 +175,13 @@
  margin-bottom: 40px;
 }
 
-.login section{
-    display: flex;
-    align-items: center;
-    width: 80vw;
-    justify-content:space-evenly;
-}
 
-.login .login-conta{
-    width: 45%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.login .login-conta img{
-    width: 380px;
-    height: 500px;
-    border-radius: 30px;
-    margin-right: 140px;
-    margin-top: -60px;
-}
 
-.espacio{
-    margin-left: 270px;
-}
 
-.input-field {
-    border: 1px solid #ccc; /* borde gris claro */
-    border-radius: 8px; /* esquinas redondeadas */
-    padding: 10px 80px; /* espacio entre el borde y el texto */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
-    margin-bottom: 4px;
-    margin-left: 4px;
+.img-form-convocatoria{
+    height: 400px;
+    width: 400px;
 }
 
 .input-fiel {
@@ -310,13 +274,6 @@ margin-bottom: 20px;
 
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -427,4 +384,15 @@ margin-bottom: 20px;
     background-repeat: no-repeat;
   background-size: cover;
     
+}
+
+
+.img-convocatoria{
+    width: 500px;
+    height: 360px;
+}
+
+
+.container-main-information{
+    height: 450px;
 }

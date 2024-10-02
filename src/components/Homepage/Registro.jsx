@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addUser } from "../redux/userSlice";
-
+import img1 from "../img/registro.jpg"
 
 
 
@@ -109,10 +109,10 @@ export default function Registro(){
                             
                             e.preventDefault();
                             
-                            console.log(nombre);
-                            console.log(email);
-                            console.log(contraseña);
-                            console.log(rol);
+                            //console.log(nombre);
+                            //console.log(email);
+                            //console.log(contraseña);
+                            //console.log(rol);
 
                             dispatch(addUser({nombre, email, contraseña, rol}))
                             

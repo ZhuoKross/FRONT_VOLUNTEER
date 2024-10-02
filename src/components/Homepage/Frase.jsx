@@ -5,8 +5,6 @@ import React from "react";
 
 export default function Frase(){
 
-    const user = useSelector(state => state.user);
-
     return(
         <div className="frase">
             <p>La naturaleza nos brinda la vida, es hora de devolverle el cuidado y la protección que se merece</p>
