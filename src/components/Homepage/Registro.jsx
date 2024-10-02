@@ -1,12 +1,9 @@
 import React from "react";
-import img1 from "../img/registro.jpg"
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addUser } from "../redux/userSlice";
- 
 
 
-//import img1 from "../img/login.png"
 
 
 export default function Registro(){
@@ -15,53 +12,48 @@ export default function Registro(){
     const [email, setEmail] = useState("");
     const [contraseña, setContraseña] = useState("");
     const [rol, setRol] = useState("");
-    
+    const id = "JILJOIJHGO9077";
+    const idRol = "LJLJOIF234"; 
+    const idPais = "OIJOIJF098u0923"   
 
     const dispatch = useDispatch();
 
 
-    //const user = useSelector(state => state.usuario)
-
-
-    
-    //console.log("estado: ", user);
-    
-
-
-    const handleSubmitEvent = (e) =>{
-        e.preventDefault();
-
-        const formRegistro = e.target.parentNode.parentNode;
-        
-        const nombre = formRegistro.children[3].children[0].value;
-        const email = formRegistro.children[5].children[0].value;
-        const contraseña = formRegistro.children[6].children[0].value;
-        const rol = formRegistro.children[8].children[0].value;
-
-
-        // console.log(nombre);
-        // console.log(email);
-        // console.log(contraseña);
-        // console.log(rol);
-
-
 
         
-    }
+    // }, [])
+    
+    
+    // const handleFetchSubmit = async () =>{
+    //     await fetch("http://localhost:8081/users/create", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify({
+    //             idUsuario: id,
+    //             nombre,
+    //             email,
+    //             contraseña,
+    //             idRol,
+    //             idPais
+    //         })
+    //     })
+    // }
 
-    const id = 1;
 
     return(
         <div className="login h-full">
           <h1 className="login-h1 pb-10  "> Sumate al cambio ambiental</h1>
            <section className="espacio">
+
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
 
 
             <article className="login-conta for">
-                <form action="" method="post">
+                <form >
 
                     <label htmlFor="">
                         <input 
@@ -73,8 +65,6 @@ export default function Registro(){
                         onChange={(e) => {setNombre(e.target.value)}}
                         />
                     </label>
-
-
                     <br />
             
                     <label htmlFor="">
@@ -99,12 +89,13 @@ export default function Registro(){
                     </label>
                     <br />
                     <label htmlFor="">
+
                     <select className="input-fiel" id="documento" name="documento" onChange={(e) => {setRol(e.target.value)}}>
                         <option value="">seleccion tipo persona</option>
                         <option value="voluntario">voluntario</option>
                         <option value="empresa">Empresa</option>
                         <option value="onu">ONU</option>
-                        <option value="nit">NIT</option>
+
                     </select>
                     </label>
                     
@@ -113,12 +104,19 @@ export default function Registro(){
                     
                     <div >
                         <input className="input-field envia hover:cursor-pointer" type="submit" 
-                        value="Registrar" onClick={(e)=> {
+
+                        value="Registrar" onClick={(e)=> { 
+                            
                             e.preventDefault();
                             
-                            dispatch(addUser(nombre, email, contraseña, rol))
+                            console.log(nombre);
+                            console.log(email);
+                            console.log(contraseña);
+                            console.log(rol);
 
-                                
+                            dispatch(addUser({nombre, email, contraseña, rol}))
+                            
+                            //handleFetchSubmit();
                             }}/>
                     </div>
 

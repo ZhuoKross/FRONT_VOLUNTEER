@@ -1,39 +1,33 @@
 import React from "react";
-import img1 from "../img/registro.jpg"
+import img1 from "../img/evento.bmp"
 
-export default function Registro(){
+export default function CrearConvo(){
 
     return(
         <div className="login">
-          <h1 className="login-h1"> Registro Evento</h1>
-           <section>
-
+          <h1 className="login-h1"> Crear evento</h1>
+           <section className="espacio">
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
-
             <article login-conta for>
                 <form action="" method="post">
-
-                    
                     <label htmlFor="">
-                        <input className="input-field" type="text" name="titulo" id="" placeholder="titulo" />
+                        <input className="input-field" type="text" name="name" id="" placeholder="Nombre del evento" />
                     </label>
                     <br />
-
-
+            
                     <label htmlFor="">
-                        <textarea name="contenido" id=""></textarea>
+                        <input className="input-field" type="text" name="" id="" placeholder="Contenido" />
                     </label>
-
-                    
-                    
+                    <label htmlFor="">
+                        <input className="input-field" type="date" id=""/>
+                    </label>
                     <br />
                     <label htmlFor="">
-                    <select className="input-fiel" id="documento" name="documento">
-                        <option value="">seleccion tipo persona</option>
-                        <option value="volumtariado">volumtario</option>
-                        <option value="sos">SOS</option>
+                    <select className="input-fiel" id="documento" name="documento" style={{marginLeft:'5px'}}>
+                        <option value="">SOS</option>
+                        <option value="cedula">Voluntario</option>
                     </select>
                     </label>
                     

@@ -25,7 +25,7 @@ export default function Login(){
                     
                     
                     <input className="input-field envia" type="submit" 
-                    value="Sign in" />
+                    value="Login" />
 
                     <Link  className="input-field envia" to={"/Registro"}>Registro</Link>
                 </form>
