@@ -6,7 +6,7 @@ import { addUser } from "../redux/userSlice";
  
 
 
-import img1 from "../img/login.png"
+//import img1 from "../img/login.png"
 
 
 export default function Registro(){
@@ -20,11 +20,11 @@ export default function Registro(){
     const dispatch = useDispatch();
 
 
-    const user = useSelector(state => state.usuario)
+    //const user = useSelector(state => state.usuario)
 
 
     
-    console.log("estado: ", user);
+    //console.log("estado: ", user);
     
 
 
@@ -52,15 +52,15 @@ export default function Registro(){
     const id = 1;
 
     return(
-        <div className="login">
-          <h1 className="login-h1"> Sumate al cambio ambiental</h1>
+        <div className="login h-full">
+          <h1 className="login-h1 pb-10  "> Sumate al cambio ambiental</h1>
            <section className="espacio">
             <article className="login-conta">
             <img src={img1} alt="" />
             </article>
 
 
-            <article login-conta for>
+            <article className="login-conta for">
                 <form action="" method="post">
 
                     <label htmlFor="">
@@ -113,8 +113,11 @@ export default function Registro(){
                     
                     <div >
                         <input className="input-field envia hover:cursor-pointer" type="submit" 
-                        value="Registrar" onClick={()=> {
+                        value="Registrar" onClick={(e)=> {
+                            e.preventDefault();
+                            
                             dispatch(addUser(nombre, email, contraseña, rol))
+
                                 
                             }}/>
                     </div>

@@ -14,7 +14,7 @@ import Convocatoria from './components/Homepage/Convocatoria'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App h-screen'>
     <Menu/>
     <Routes>
     <Route path="/" element={<Home />} exact /> 

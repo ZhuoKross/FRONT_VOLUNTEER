@@ -1,9 +1,12 @@
 import React from "react";
-
+import { useSelector } from "react-redux";
 import img4 from "../img/ConservaciónAmbiental.jpg"
 import { Link } from "react-router-dom";
 
 export default function Convocatoria(){
+
+
+  const user = useSelector(state => state.user)
 
     return(
         <div className="convocatoria">
@@ -12,6 +15,12 @@ export default function Convocatoria(){
                     <i className="fas fa-handshake mr-2" style={{ fontSize: '24px', color: '#FFC107' }}></i>
                     <span className="text-green-500">Únete</span> a nuestra misión
                 </h1>
+                <ul>
+                  <li>nombre: {user.nombre}</li>
+                  <li>email: {user.email}</li>
+                  <li>contraseña: {user.contraseña}</li>
+                  <li></li>
+                </ul>
                 <p className="text-lg font-normal text-gray-600 mt-4">Descubre oportunidades para hacer una diferencia en la vida de los demás</p>
 
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Menu from "../navigation/Menu";
 import Header from "./Header";
 import { Outlet } from "react-router";
 import Frase from "./frase";
