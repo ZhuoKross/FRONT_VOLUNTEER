@@ -20,16 +20,16 @@ export default function Menu(){
 
     const user = useSelector((state) => {return state.user});
 
-    console.log(user.name)
+    //console.log(user.name)
 
     return(
 
         <div className="flex justify-around items-center pt-3 pb-3">
             <h1 className="font-bold">Volunteer</h1>
             <ul className="flex justify-around w-96 ul">
-                <Link className="li" to={"/Home"}>Inicio</Link>
+                <Link className="li" to={"/"}>Inicio</Link>
                 <Link className="li" to={"/Convocatoria"}>Convocatoria</Link>
-                <Link to={"/CrearConvo"}>Crear convocatoria</Link>
+                <Link to={"/Profile"}>User</Link>
             </ul>
 
             <IsRegistered nombre={user.nombre || null}/>
